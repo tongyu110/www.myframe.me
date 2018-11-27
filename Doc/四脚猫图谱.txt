@@ -1,0 +1,32 @@
+四脚猫图谱
+
+项目实战推荐课题
+MVC框架设计的准备工作
+自己的MVC框架最终效果
+框架的目录规划
+去哪里找轮子？
+采用composer安装自己需要的组件
+路由组件的配置
+路由组件的基本使用
+使用路由组件调用自己的controller
+使用 composer 的autoload加载自己的类
+让框架支持默认路由：controller/method
+完善路由的转发功能
+让路由支持带参数的controller方法
+测试自己的controller方法
+定义自己的model类
+依据model自动生成数据库表
+用自己的model类测试基本的CRUD功能
+让框架支持模版引擎
+调用自己的模版引擎
+框架接下来需要继续优化的任务
+
+
+
+查找 composer 包 [route]
+https://packagist.org
+https://github.com
+
+composer require lox/pheasant dev-master	数据库 ORM 
+composer require latte/latte ^2.4		模板引擎			
+composer require altorouter/altorouter ^1.2	路由器

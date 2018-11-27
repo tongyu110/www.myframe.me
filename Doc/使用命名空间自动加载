@@ -1,0 +1,23 @@
+. 定义框架需要有规则，使用命名空间方式 (prs4)
+. 使用 composer 工具
+在根目录下 
+/composer.json
+{
+    "require": {
+        "lox/pheasant": "dev-master",
+        "latte/latte": "2.4",
+        "altorouter/altorouter": "1.2"
+    },
+    "autoload": {
+		"psr-4":{
+			"app\\": "app/"
+		}
+	},
+	"minimum-stbility": "dev"
+}
+
+这里的 autoload 段代码就是定义自动加载，命名空间 "app\\": "app/" 对应，这里是使用 pres4 规则规范
+
+. 还需要执行命名 " composer dumpautoload "
+  生成 /vendor/autoload_psr4.php 文件
+  那么在 app 目录下使用的命名空间就有效了
